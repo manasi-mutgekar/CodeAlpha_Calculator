@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeAlpha Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <div class="heading">
+      <p class="eyebrow">CODEALPHA PROJECT</p>
+      <h1>Calculator</h1>
+    </div>
+
+    <div class="display" aria-live="polite">
+      <div id="previous-operand" class="previous-operand"></div>
+      <div id="current-operand" class="current-operand">0</div>
+    </div>
+
+    <div class="buttons">
+      <button class="function span-two" data-action="clear">AC</button>
+      <button class="function" data-action="delete">DEL</button>
+      <button class="operator" data-operator="÷">÷</button>
+
+      <button data-number="7">7</button>
+      <button data-number="8">8</button>
+      <button data-number="9">9</button>
+      <button class="operator" data-operator="×">×</button>
+
+      <button data-number="4">4</button>
+      <button data-number="5">5</button>
+      <button data-number="6">6</button>
+      <button class="operator" data-operator="−">−</button>
+
+      <button data-number="1">1</button>
+      <button data-number="2">2</button>
+      <button data-number="3">3</button>
+      <button class="operator" data-operator="+">+</button>
+
+      <button data-action="sign">+/−</button>
+      <button data-number="0">0</button>
+      <button data-action="decimal">.</button>
+      <button class="equals" data-action="equals">=</button>
+    </div>
+
+    <p class="hint">Keyboard supported · Press Esc to clear</p>
+  </main>
+</body>
+</html>
